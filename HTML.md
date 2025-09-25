@@ -17,3 +17,4 @@ image text : <alt> text is used for screen readers if image fails to load
 <img src="link goes here.jpg" alt="text"> 
 Link another page with the Anchor element : (a) <p> you can add words here <a href="link" target="_blank"> text </a> you can add words here </p> *EXAMPLE* <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
 To open links in a new tab, you can use the Target attribte on the anchor (a) element :   ↑target="_blank"
+## Day 1 - 16 steps done
