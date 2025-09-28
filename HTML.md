@@ -1,9 +1,9 @@
 # Responsive Web Design
 Learn HTML by Building a Cat Photo App 71 steps
-www.freecodecamp.org
+https://www.freecodecamp.org/learn/2022/responsive-web-design/
+Code: HTML
 
 ## Day 1 - 
-Code: HTML
 <html> 
 	<body>
 		<main> the main is used to represent the main content of the body of the HTML document, it should be unique to the document and should not be repeated in other parts of the document.
