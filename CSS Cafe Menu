@@ -1,1 +1,101 @@
+# Responsive Web Design
+Learn Basic CSS by Building a Cafe Menu 91 steps
+https://www.freecodecamp.org/learn/2022/responsive-web-design/
+Code: HTML and CSS
 
+## Day 1 - 
+Code: HTMLCSS tells the browser how to display your webpage. You can use CSS to set the color, font, size, and other aspects of HTML elements.
+You can add (style) to an element by specifying it in the style element and setting a property for it like this:
+Example Code: element {property: value;} 
+<style>
+      h1, h2, p {
+      text-align: center;
+      }
+    </style>
+it's best to put all the styles in a separate file and link to it. A separate (styles.css) file: h1, h2, p {text-align: center;}
+To link your (styles.css) file you need to: inside the (head) element, add a (link) element, give it a (rel) attribute with the value of "stylesheet" and a (href) attribute with the value of "styles.css". *Note that the link element is a void element.
+<link rel="stylesheet" href="styles.css">
+For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a (meta) element with a special (content) attribute. <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+Change the background color of the body element to brown: body {background-color: brown}
+The <div> element in HTML is a generic container for grouping other elements. It doesn’t have any special meaning by itself — it’s just a “division” of content. But it’s very useful because you can style it with CSS or manipulate it with JavaScript. <div id="menu"></div>
+#menu { width: 300px; } → This sets the width of the <div> with the id menu to 300 pixels. By default, a <div> stretches across the whole page width. Adding width: 300px; makes it a narrow box, often used for sidebars or menus.
+#menu is an ID selector: the # matches the element with id="menu" in HTML. in the CSS file: #menu {width: 300px or you can also write 80%; background-color: burlywood;} 
+Comments in CSS look like this: /* comment here */
+To center your #menu horizontally:  margin-left: auto; margin-right: auto;
+It is more common to use a different selector to style your elements. A (class selector) is defined by a name with a dot directly in front of it, like this: .class-name {styles} in our case: we replace #menu with a class named .menu
+Switching from (ID) to (class) makes your CSS reusable and scalable. so instead of <div id="menu"> we write: <div class="menu">
+You can add a background image in the (CSS) file in the (body) section: body {background-image: url("https://.jpg");}
+We want to add things to the menu like item and its price and also style them in our CSS file so we can write this in our HTML file: <article>  <p class="flavor">French Vanilla</p>   <p class="price">3.00</p> </article> we created the classes= to style them in our CSS file
+like this:    .flavor {text-align: left;}      .price {text-align: right;}
+HTML: <article class="item"> CSS:  .item p{display: inline-block} so they are both on the same line
+then for the type of coffee to be on the left and the price on the right in CSS: .flavor {text-align: left;width: 50%;} .price {text-align: right;width: 50%;} // HTML: <article class="item"> <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+## Day 1 - Step > 45 done
+
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p>Est. 2020</p>
+        <section>
+          <h2>Coffee</h2>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
+CSS:
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item p {
+  display: inline-block;
+}
+
+.flavor {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+## Day 2 -
